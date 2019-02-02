@@ -1,0 +1,36 @@
+ * result:{
+			clientId:"Iee8020950167e4e1e4e125bc0168abeb413f281e",//
+			parameterPanelId:"Iee8020950167e4e1e4e125bc0168abeb413f281f"
+	        reportBean:{
+				clientConfig:"{"gridProp":{"
+											+ ""defaultRow":false,"
+											+ ""fieldProps":{"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2800":{"width":72,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2801":{"width":126,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2802":{"width":199,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2803":{"width":67,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2804":{"width":224,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2805":{"width":90,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2806":{"width":88,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2807":{"width":72,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2808":{"width":89,"align":"RIGHT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2809":{"width":94,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280a":{"width":"138","align":"LEFT","visible":true},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280b":{"width":91,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280c":{"width":208,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280d":{"width":193,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280e":{"width":256,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280f":{"width":137,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2810":{"width":242,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2811":{"width":105,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2812":{"width":132,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2813":{"width":78,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2814":{"width":93,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2815":{"width":129,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2816":{"width":143,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2817":{"width":105,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2818":{"width":122,"align":"LEFT"},"
+													+ ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2819":{"width":71,"align":"LEFT"},"
+			},
+			rowsPerPage:30
+		}
