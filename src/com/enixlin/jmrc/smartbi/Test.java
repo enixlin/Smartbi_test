@@ -20,14 +20,16 @@ public class Test {
 
 		String reportID1 = "";
 		String reportID2 = "";
+		String reportID3 = "";
 		String clientId = "";
-		String parameterPanelId="";
+		String parameterPanelId = "";
 		String url_query = "http://110.0.170.88:9083/smartbi/vision/RMIServlet?debug=true";
 		Map<String, String> map = new HashMap<String, String>();
 		String encoding = "utf8";
 		String result = "";
-		String BizTheme="";
+		String BizTheme = "";
 		JsonArray ja_BIZATTR;
+		JsonArray ja_filter;
 		JsonObject BizViewOutField;
 
 		/**
@@ -43,14 +45,20 @@ public class Test {
 		map.clear();
 		map.put("className", "CatalogService");
 		map.put("methodName", "getCatalogElementById");
-		map.put("params", "[\"Iee801fbd227e43eb01583d989ca32e84\"]");
+		map.put("params", "[Iee801fbd227e43eb01583d989ca32e84]");
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
-		
+
 		map.clear();
 		map.put("className", "CatalogService");
 		map.put("methodName", "getCatalogElementById");
-		map.put("params", "[\"reequery-gen1303\"]");
+		map.put("params", "[freequery-gen488]");
+		result = ns.HttpPost(url_query, map, encoding);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementById");
+		map.put("params", "[Iee801fbd227e43eb01583d989ca32e84]");
 		result = ns.HttpPost(url_query, map, encoding);
 
 		// 打开复合查询SA-ISS-01-国际业务自助分析
@@ -89,20 +97,29 @@ public class Test {
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "openCombinedQuery");
-		map.put("params", "[\"Iee801fbd227e43eb01583d989ca32e84\",null ]");
+		map.put("params", "[ Iee801fbd227e43eb01583d989ca32e84,null ]");
 		result = ns.HttpPost(url_query, map, encoding);
-		// System.out.println(result);
+//		System.out.println(result);
 		JsonService js = new JsonService(result);
 		JsonArray ja = js.getJsonArray("result");
-		ja_BIZATTR=(JsonArray) js.getJsonArray("result").get(2);
+		ja_BIZATTR = (JsonArray) js.getJsonArray("result").get(2);
+		ja_filter = (JsonArray) js.getJsonArray("result").get(3);
 		reportID1 = ja.get(0).toString();
 		reportID2 = ja.get(1).toString();
-		BizTheme=ja.get(4).toString();
+		reportID3 = ja.get(8).toString();
+		BizTheme = ja.get(4).toString();
 
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[ Iee801fbd227e43eb01583d989ca32e84]");
+		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
 
 		// 将reportID1传入生成样版报告
-		//这里将返回一个关键对象 
+		// 这里将返回一个关键对象
 
 		// result:{
 		// clientId:"Iee8020950167e4e1e4e125bc0168abeb413f281e",//
@@ -170,112 +187,469 @@ public class Test {
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "createSimpleReport");
-		map.put("params", "[\'" + reportID1 + "\']");
+		map.put("params", "[" + reportID1 + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		 js = new JsonService(result);
+		//System.out.println(result);
+		js = new JsonService(result);
 		JsonObject jo = js.getJsonObject("result");
 		clientId = jo.get("clientId").toString();
-		parameterPanelId=jo.get("parameterPanelId").toString();
-		BizViewOutField=js.getJsonObject("clientConfig").getAsJsonObject("fieldProps");
-		
-		
-		
-		
+		parameterPanelId = jo.get("parameterPanelId").toString();
+		// BizViewOutField= jo.getAsJsonObject("reportBean");
+		JsonObject jk = jo.getAsJsonObject("reportBean");
+		String jm = jk.get("clientConfig").getAsString();
+		JsonService jss = new JsonService(jm);
+		BizViewOutField = jss.getJsonObject().get("gridProp").getAsJsonObject().get("fieldProps").getAsJsonObject();
+
 		map.clear();
 		map.put("className", "BusinessViewService");
 		map.put("methodName", "getBusinessViewByBizThemeCatalogTree");
 		map.put("params", "[" + BizTheme + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(BizTheme);
-//		System.out.println(result);
 
-		
-		
+		// System.out.println(BizTheme);
+		// System.out.println(result);
+
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "getLocalFilterElements");
 		map.put("params", "[" + reportID1 + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		
 
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "getFunctionValue");
-		map.put("params", "[ " + clientId + ",\'CurrentReportName()\']");
+		map.put("params", "[ " + clientId + ",CurrentReportName()]");
 		result = ns.HttpPost(url_query, map, encoding);
-		System.out.println(reportID1);
-		System.out.println(clientId);
-		System.out.println(result);
+		// System.out.println(reportID1);
+		// System.out.println(clientId);
+		 System.out.println(result);
 
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "initFromBizViewEx");
-		map.put("params", "[" + reportID1 + ","+clientId+","+reportID2+",true]");
+		map.put("params", "[" + reportID1 + "," + clientId + "," + reportID2 + ",true]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
-		
+		// System.out.println(result);
+
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "setSimpleReportClientId");
-		map.put("params", "[" + reportID1 + ","+clientId+"]");
+		map.put("params", "[" + reportID1 + "," + clientId + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
-		
+		// System.out.println(result);
+
 		map.clear();
 		map.put("className", "ConfigClientService");
 		map.put("methodName", "getSystemConfig");
 		map.put("params", "[REPORT_BROWSE_AUTO_REFRESH]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(0) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "[" + ja_BIZATTR.get(0) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.国际业务交易自助分析表']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.基本属性']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "BusinessThemeService");
+		map.put("methodName", "getBusinessAttributesDataType");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.基本属性']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		//
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(1) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.客户信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "BusinessThemeService");
+		map.put("methodName", "getBusinessAttributesDataType");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.客户信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(2) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(3) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(4) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(5) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(6) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(7) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(8) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(9) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(10) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.交易对象信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "BusinessThemeService");
+		map.put("methodName", "getBusinessAttributesDataType");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.交易对象信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(11) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(12) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(13) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(14) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(15) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(16) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(17) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(18) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.归属机构信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "BusinessThemeService");
+		map.put("methodName", "getBusinessAttributesDataType");
+		map.put("params", "['BIZOBJ.新会特色报表.国际业务交易自助分析主题.归属机构信息']");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(18) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(19) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(20) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(21) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(22) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(23) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(24) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(25) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_BIZATTR.get(26) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(0) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getChildElements");
+		map.put("params", "[ Iee80208c3589431b01593f95adda57ec ]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(1) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(2) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(3) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(4) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(5) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(6) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(7) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
+		map.clear();
+		map.put("className", "FilterService");
+		map.put("methodName", "isHiddenFilter");
+		map.put("params", "[" + ja_filter.get(8) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		// System.out.println(result);
 		
 		map.clear();
 		map.put("className", "CatalogService");
 		map.put("methodName", "getCatalogElementPath");
-		map.put("params", "["+ja_BIZATTR.get(0)+"]");
+		map.put("params", "[" + ja_filter.get(0) + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
-		
+		// System.out.println(result);
 		map.clear();
 		map.put("className", "CatalogService");
-		map.put("methodName", "getChildElements");
-		map.put("params", "["+ja_BIZATTR.get(0)+"]");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(1) + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
-		
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(2) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(3) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(4) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(5) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(6) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(7) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		map.clear();
+		map.put("className", "CatalogService");
+		map.put("methodName", "getCatalogElementPath");
+		map.put("params", "[" + ja_filter.get(8) + "]");
+		result = ns.HttpPost(url_query, map, encoding);
+		//System.out.println(result);
+
 		/*
-		以下是报表输出
+		 * 以下是报表输出
+		 * 
+		 */
+
 		
-		*/
-		
+		System.out.println("reportID1 is:"+reportID1);
+		System.out.println("reportID2 is:"+reportID2);
+		System.out.println("clientId is"+clientId);
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "clearSQLResultStore");
-		map.put("params", "[" + reportID1  +"]");
+		map.put("params", "[" + reportID1 + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		System.out.println(result);
-		
+		//System.out.println(result);
+
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "setRowsPerPage");
-		map.put("params", "[" + reportID1  +",30]");
+		map.put("params", "[" + reportID1 + ",30]");
 		result = ns.HttpPost(url_query, map, encoding);
 		System.out.println(result);
-		
+
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "getTotalRowsCountWithFuture");
-		map.put("params", "[" + reportID1  +",0]");
+		map.put("params", "[" + reportID1 + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
-		System.out.println(result);
-		
+		// System.out.println(result);
+
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "getReportDataWithFuture");
-		map.put("params", "[" + reportID1  +",0]");
+		map.put("params", "[" + reportID1 + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
-		System.out.println(result);
-		
-		
+		//System.out.println(result);
+
 	}
 
 }

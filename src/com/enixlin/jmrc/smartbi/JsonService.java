@@ -22,4 +22,9 @@ public class JsonService {
 		return this.jsonObject.get(key).getAsJsonObject();
 	}
 
+	public JsonObject getJsonObject() {
+		return jsonObject;
+	}
+	
+
 }
