@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="615f6e35-3afe-4370-82b9-867976e11437" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/GsonDesignDocument.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/ReleaseProcess.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/UserGuide.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/java/com/google/gson/codegen/CodeGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/java/com/google/gson/codegen/GeneratedTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/java/com/google/gson/codegen/GeneratedTypeAdapterProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/java/com/google/gson/codegen/JavaWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/resources/META-INF/services/javax.annotation.processing.Processor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/test/java/com/google/gson/codegen/functional/CodeGenFunctionalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/test/java/com/google/gson/codegen/functional/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/default.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/proguard.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/res/drawable/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/res/layout/main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/src/com/google/gson/examples/android/GsonProguardExampleActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/src/com/google/gson/examples/android/model/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/src/com/google/gson/examples/android/model/LineItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/extras/examples/rawcollections/RawCollectionsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/graph/GraphAdapterBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/interceptors/Intercept.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/interceptors/InterceptorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/interceptors/JsonPostDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/java/com/google/gson/typeadapters/UtcDateTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/java/com/google/gson/graph/GraphAdapterBuilderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/java/com/google/gson/interceptors/InterceptorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/java/com/google/gson/typeadapters/RuntimeTypeAdapterFactoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/java/com/google/gson/typeadapters/UtcDateTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/Gson 2.1 notes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/assembly-descriptor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/bnd.bnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/ExclusionStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/FieldAttributes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/FieldNamingPolicy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/FieldNamingStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/Gson.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/GsonBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/InstanceCreator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonDeserializationContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonDeserializer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonElement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonIOException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonNull.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonObject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonParseException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonPrimitive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonSerializationContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonSerializer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonStreamParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/JsonSyntaxException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/LongSerializationPolicy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/TypeAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/TypeAdapterFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/Expose.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/JsonAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/SerializedName.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/Since.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/Until.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/class-use/Expose.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/class-use/JsonAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/class-use/SerializedName.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/class-use/Since.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/class-use/Until.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/annotations/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/ExclusionStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/FieldAttributes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/FieldNamingPolicy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/FieldNamingStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/Gson.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/GsonBuilder.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/InstanceCreator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonArray.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonDeserializationContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonDeserializer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonElement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonIOException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonNull.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonObject.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonParseException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonPrimitive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonSerializationContext.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonSerializer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonStreamParser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/JsonSyntaxException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/LongSerializationPolicy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/TypeAdapter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/class-use/TypeAdapterFactory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/TypeToken.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/class-use/TypeToken.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/reflect/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/JsonReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/JsonToken.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/JsonWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/MalformedJsonException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/class-use/JsonReader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/class-use/JsonToken.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/class-use/JsonWriter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/class-use/MalformedJsonException.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/com/google/gson/stream/package-use.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/overview-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/overview-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/resources/inherit.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/serialized-form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/docs/javadocs/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/DefaultDateTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/ExclusionStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/FieldAttributes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/FieldNamingPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/FieldNamingStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/Gson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/GsonBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/InstanceCreator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonDeserializationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonDeserializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonNull.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonParseException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonPrimitive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonSerializationContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonSerializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonStreamParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/JsonSyntaxException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/LongSerializationPolicy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/TreeTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/TypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/TypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/Expose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/JsonAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/SerializedName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/Since.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/Until.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/annotations/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/$Gson$Preconditions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/$Gson$Types.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/ConstructorConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/Excluder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/JsonReaderInternalAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/LazilyParsedNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/LinkedHashTreeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/LinkedTreeMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/ObjectConstructor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/Primitives.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/Streams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/UnsafeAllocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/ArrayTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/CollectionTypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/DateTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/JsonTreeReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/JsonTreeWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/MapTypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/ObjectTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/SqlDateTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/TimeTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/TypeAdapterRuntimeTypeWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/TypeAdapters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/bind/util/ISO8601Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/internal/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/reflect/TypeToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/reflect/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/stream/JsonReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/stream/JsonScope.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/stream/JsonToken.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/stream/JsonWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/java/com/google/gson/stream/MalformedJsonException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/CommentsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/DefaultDateTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/DefaultInetAddressTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/DefaultMapJsonSerializerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/ExposeAnnotationExclusionStrategyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/FieldAttributesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/GenericArrayTypeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/GsonBuilderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/GsonTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/InnerClassExclusionStrategyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JavaSerializationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonNullTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonObjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonPrimitiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/JsonStreamParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/LongSerializationPolicyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/MixedStreamTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/MockExclusionStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/ObjectTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/OverrideCoreTypeAdaptersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/ParameterizedTypeFixtures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/ParameterizedTypeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/PrimitiveTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/VersionExclusionStrategyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/common/MoreAsserts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/common/TestTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/CircularReferenceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/CollectionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ConcurrencyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/CustomDeserializerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/CustomSerializerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/CustomTypeAdaptersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/DefaultTypeAdaptersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/DelegateTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/EnumTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/EscapingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ExclusionStrategyFunctionalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ExposeFieldsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/FieldExclusionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/FieldNamingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/InheritanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/InstanceCreatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/InterfaceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/InternationalizationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JavaUtilConcurrentAtomicTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JavaUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JsonAdapterAnnotationOnClassesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JsonAdapterAnnotationOnFieldsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JsonArrayTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JsonParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/JsonTreeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/LeniencyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/MapAsArrayTypeAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/MapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/MoreSpecificTypeSerializationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/NamingPolicyTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/NullObjectAndFieldTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ObjectTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ParameterizedTypesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/PrettyPrintingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/PrimitiveCharacterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/PrimitiveTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/PrintFormattingTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/RawSerializationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ReadersWritersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/RuntimeTypeAdapterFactoryFunctionalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/SecurityTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/SerializedNameTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/StreamingTypeAdaptersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/StringTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ThrowableFunctionalTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/TreeTypeAdaptersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/TypeAdapterPrecedenceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/TypeHierarchyAdapterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/TypeVariableTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/UncategorizedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/VersioningTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/GsonTypesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/LazilyParsedNumberTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/LinkedHashTreeMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/LinkedTreeMapTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/bind/JsonElementReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/internal/bind/JsonTreeWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/metrics/PerformanceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/reflect/TypeTokenTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/regression/JsonAdapterNullSafeTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/stream/JsonReaderPathTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/stream/JsonReaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/stream/JsonWriterTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/lib/gson-cleanup-styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/lib/gson-formatting-styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/BagOfPrimitives.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/BagOfPrimitivesDeserializationBenchmark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/CollectionsDeserializationBenchmark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/ParseBenchmark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/ParseBenchmarkData.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/SerializationBenchmark.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/main/java/com/google/gson/protobuf/ProtoTypeAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/main/protobuf/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/main/protobuf/bag.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/test/java/com/google/gson/protobuf/functional/ProtosWithAnnotationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/test/java/com/google/gson/protobuf/functional/ProtosWithComplexAndRepeatedFieldsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/test/java/com/google/gson/protobuf/functional/ProtosWithPrimitiveTypesTest.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2451">
+              <caret line="237" column="55" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="" pinned="false" current-in-tab="true">
+        <entry file="mock:///">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="3" column="455" selection-start-line="3" selection-start-column="455" selection-end-line="3" selection-end-column="455" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JsonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/JsonService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/NetService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-91" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="322" />
+    <option name="y" value="-52" />
+    <option name="width" value="2392" />
+    <option name="height" value="1368" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Smartbi_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbi_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Smartbi_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbi_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Smartbi_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Smartbi_test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="smartbi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Smartbi_test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Smartbi_test" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.enixlin.jmrc.smartbi.Test" />
+      <module name="Smartbi_test" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="615f6e35-3afe-4370-82b9-867976e11437" name="Default" comment="" />
+      <created>1556450105987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556450105987</updated>
+      <workItem from="1556450110320" duration="896000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="896000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info id="Build Variants" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5003802" side_tool="true" weight="1.0" />
+      <window_info anchor="right" id="Maven Projects" order="0" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Logcat" order="3" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49809885" weight="0.3292517" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="5" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49961978" weight="0.6353741" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info id="Captures" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" weight="0.47756654" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="8" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/JsonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/NetService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/java/com/google/gson/functional/ObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/enixlin/jmrc/smartbi/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2451">
+          <caret line="237" column="55" selection-start-line="237" selection-start-column="55" selection-end-line="237" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

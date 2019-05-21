@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ParseBenchmarkData">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/java/com/google/gson/metrics/ParseBenchmarkData.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Smartbi_test.iml" filepath="$PROJECT_DIR$/Smartbi_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/android-proguard-example.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/examples/android-proguard-example/android-proguard-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/main.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/main1.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/metrics/src/main/main1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/main2.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/main/main2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/main/main3.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/main/main3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/main4.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/main/main4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/test.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/extras/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/test1.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/gson/src/test/test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/test/test2.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/proto/src/test/test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/test/test3.iml" filepath="$PROJECT_DIR$/libs/gson-gson-parent-2.6.2/codegen/src/test/test3.iml" />
+    </modules>
+  </component>
+</project>

@@ -49,6 +49,8 @@ public class Test {
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
 
+		// 这里传入的参数freequery-gen488是一个变量，需要从dom树中取得，
+//		但这个是随机节点的编号，要想办法取得？？？？？？？？？？
 		map.clear();
 		map.put("className", "CatalogService");
 		map.put("methodName", "getCatalogElementById");
@@ -189,7 +191,7 @@ public class Test {
 		map.put("methodName", "createSimpleReport");
 		map.put("params", "[" + reportID1 + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		//System.out.println(result);
+		// System.out.println(result);
 		js = new JsonService(result);
 		JsonObject jo = js.getJsonObject("result");
 		clientId = jo.get("clientId").toString();
@@ -222,7 +224,7 @@ public class Test {
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(reportID1);
 		// System.out.println(clientId);
-		 System.out.println(result);
+		System.out.println(result);
 
 		map.clear();
 		map.put("className", "CombinedQueryService");
@@ -564,7 +566,7 @@ public class Test {
 		map.put("params", "[" + ja_filter.get(8) + "]");
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
-		
+
 		map.clear();
 		map.put("className", "CatalogService");
 		map.put("methodName", "getCatalogElementPath");
@@ -611,23 +613,22 @@ public class Test {
 		map.put("methodName", "getCatalogElementPath");
 		map.put("params", "[" + ja_filter.get(8) + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		//System.out.println(result);
+		// System.out.println(result);
 
 		/*
 		 * 以下是报表输出
 		 * 
 		 */
 
-		
-		System.out.println("reportID1 is:"+reportID1);
-		System.out.println("reportID2 is:"+reportID2);
-		System.out.println("clientId is"+clientId);
+		System.out.println("reportID1 is:" + reportID1);
+		System.out.println("reportID2 is:" + reportID2);
+		System.out.println("clientId is" + clientId);
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "clearSQLResultStore");
 		map.put("params", "[" + reportID1 + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		//System.out.println(result);
+		// System.out.println(result);
 
 		map.clear();
 		map.put("className", "ClientReportService");
@@ -648,7 +649,7 @@ public class Test {
 		map.put("methodName", "getReportDataWithFuture");
 		map.put("params", "[" + reportID1 + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
-		//System.out.println(result);
+		// System.out.println(result);
 
 	}
 
