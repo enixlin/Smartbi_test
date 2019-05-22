@@ -49,13 +49,6 @@ public class Test {
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
 
-		// 这里传入的参数freequery-gen488是一个变量，需要从dom树中取得，
-//		但这个是随机节点的编号，要想办法取得？？？？？？？？？？
-		map.clear();
-		map.put("className", "CatalogService");
-		map.put("methodName", "getCatalogElementById");
-		map.put("params", "[freequery-gen488]");
-		result = ns.HttpPost(url_query, map, encoding);
 
 		map.clear();
 		map.put("className", "CatalogService");
@@ -63,45 +56,13 @@ public class Test {
 		map.put("params", "[Iee801fbd227e43eb01583d989ca32e84]");
 		result = ns.HttpPost(url_query, map, encoding);
 
-		// 打开复合查询SA-ISS-01-国际业务自助分析
-		//
-		// 这里返回了几个比较关键的参数 ,第0，1，8都是后续会用到，先用变量保存起来
-		/*
-		 * 0:"Iee8020950167e4e1e4e125bc0168abeb410827fc"
-		 * 1"Iee8020950167e4e1e4e125bc0168abeb410827fd"
-		 * 2:["BIZATTR.新会特色报表.国际业务交易自助分析主题.数据日期", "BIZATTR.新会特色报表.国际业务交易自助分析主题.客户号",…]
-		 * 3:["FILTER.新会特色报表.国际业务交易自助分析主题.业务起始日期",
-		 * "FILTER.新会特色报表.国际业务交易自助分析主题.p_sa_iss_end_date",…]
-		 * 4:"THEME.新会特色报表.国际业务交易自助分析主题" 5："DS.新会特色报表" 6:"SA-ISS-01-国际业务自助分析"
-		 * 7:"国际业务自助分析" 8:"Iee8020950167e4e1e4e125bc0168abeb410827fe" 9:""
-		 * 10:{isAutoUpdateSelected: true}isAutoUpdateSelected:true
-		 * 11:["BIZATTR.新会特色报表.国际业务交易自助分析主题.数据日期", "BIZATTR.新会特色报表.国际业务交易自助分析主题.客户号",…]
-		 * 0:"BIZATTR.新会特色报表.国际业务交易自助分析主题.数据日期" 1:"BIZATTR.新会特色报表.国际业务交易自助分析主题.客户号"
-		 * 2:"BIZATTR.新会特色报表.国际业务交易自助分析主题.客户名称" 3:"BIZATTR.新会特色报表.国际业务交易自助分析主题.客户类型"
-		 * 4:"BIZATTR.新会特色报表.国际业务交易自助分析主题.业务号" 5:"BIZATTR.新会特色报表.国际业务交易自助分析主题.产品名称"
-		 * 6:"BIZATTR.新会特色报表.国际业务交易自助分析主题.业务类型" 7:"BIZATTR.新会特色报表.国际业务交易自助分析主题.业务币种"
-		 * 8:"BIZATTR.新会特色报表.国际业务交易自助分析主题.业务金额" 9:"BIZATTR.新会特色报表.国际业务交易自助分析主题.业务办理日期"
-		 * 10:"BIZATTR.新会特色报表.国际业务交易自助分析主题.对方国别" 11:"BIZATTR.新会特色报表.国际业务交易自助分析主题.对方银行编号"
-		 * 12:"BIZATTR.新会特色报表.国际业务交易自助分析主题.对方银行名称"
-		 * 13:"BIZATTR.新会特色报表.国际业务交易自助分析主题.付款人账户" 14:"BIZATTR.新会特色报表.国际业务交易自助分析主题.付款人名称"
-		 * 15:"BIZATTR.新会特色报表.国际业务交易自助分析主题.收款人账户" 16:"BIZATTR.新会特色报表.国际业务交易自助分析主题.收款人名称"
-		 * 17:"BIZATTR.新会特色报表.国际业务交易自助分析主题.经办上级机构号"
-		 * 18:"BIZATTR.新会特色报表.国际业务交易自助分析主题.经办上级机构名称"
-		 * 19:"BIZATTR.新会特色报表.国际业务交易自助分析主题.经办网点号"
-		 * 20:"BIZATTR.新会特色报表.国际业务交易自助分析主题.经办网点名称"
-		 * 21:"BIZATTR.新会特色报表.国际业务交易自助分析主题.计价归属上级机构号"
-		 * 22:"BIZATTR.新会特色报表.国际业务交易自助分析主题.计价归属上级机构名称"
-		 * 23:"BIZATTR.新会特色报表.国际业务交易自助分析主题.计价归属网点号"
-		 * 24:"BIZATTR.新会特色报表.国际业务交易自助分析主题.计价归属网点名称"
-		 * 25:"BIZATTR.新会特色报表.国际业务交易自助分析主题.经办人员" 26:"BIZATTR.新会特色报表.国际业务交易自助分析主题.复核人员"
-		 * 12:[]
-		 */
+		
 		map.clear();
 		map.put("className", "CombinedQueryService");
 		map.put("methodName", "openCombinedQuery");
 		map.put("params", "[ Iee801fbd227e43eb01583d989ca32e84,null ]");
 		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
+		// System.out.println(result);
 		JsonService js = new JsonService(result);
 		JsonArray ja = js.getJsonArray("result");
 		ja_BIZATTR = (JsonArray) js.getJsonArray("result").get(2);
@@ -120,71 +81,7 @@ public class Test {
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
 
-		// 将reportID1传入生成样版报告
-		// 这里将返回一个关键对象
-
-		// result:{
-		// clientId:"Iee8020950167e4e1e4e125bc0168abeb413f281e",//
-		// parameterPanelId:"Iee8020950167e4e1e4e125bc0168abeb413f281f"
-		// reportBean:{
-		// clientConfig:"{"gridProp":{"
-		// + ""defaultRow":false,"
-		// + ""fieldProps":{"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2800":{"width":72,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2801":{"width":126,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2802":{"width":199,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2803":{"width":67,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2804":{"width":224,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2805":{"width":90,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2806":{"width":88,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2807":{"width":72,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2808":{"width":89,"align":"RIGHT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2809":{"width":94,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280a":{"width":"138","align":"LEFT","visible":true},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280b":{"width":91,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280c":{"width":208,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280d":{"width":193,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280e":{"width":256,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a280f":{"width":137,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2810":{"width":242,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2811":{"width":105,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2812":{"width":132,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2813":{"width":78,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2814":{"width":93,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2815":{"width":129,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2816":{"width":143,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2817":{"width":105,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2818":{"width":122,"align":"LEFT"},"
-		// +
-		// ""BizViewOutField.Iee8020950167e4e1e4e125bc0168abeb410827fd.Iee8020950167e4e1e4e125bc0168abeb410a2819":{"width":71,"align":"LEFT"},"
-		// },
-		// rowsPerPage:30
-		// }
+		
 
 		map.clear();
 		map.put("className", "CombinedQueryService");
@@ -196,11 +93,18 @@ public class Test {
 		JsonObject jo = js.getJsonObject("result");
 		clientId = jo.get("clientId").toString();
 		parameterPanelId = jo.get("parameterPanelId").toString();
+
 		// BizViewOutField= jo.getAsJsonObject("reportBean");
-		JsonObject jk = jo.getAsJsonObject("reportBean");
-		String jm = jk.get("clientConfig").getAsString();
-		JsonService jss = new JsonService(jm);
+		JsonObject reportBean = jo.getAsJsonObject("reportBean");
+		String clientConfig = reportBean.get("clientConfig").getAsString();
+
+		JsonService jss = new JsonService(clientConfig);
 		BizViewOutField = jss.getJsonObject().get("gridProp").getAsJsonObject().get("fieldProps").getAsJsonObject();
+		JsonArray opParameter = jss.getJsonObject().get("paramSetting").getAsJsonObject().get("applyDefaultValueParams").getAsJsonArray();
+		String StartDay=opParameter.get(0).toString();
+	
+		
+		
 
 		map.clear();
 		map.put("className", "BusinessViewService");
@@ -613,7 +517,15 @@ public class Test {
 		map.put("methodName", "getCatalogElementPath");
 		map.put("params", "[" + ja_filter.get(8) + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		// System.out.println(result);
+//		System.out.println(result);
+
+		map.clear();
+		map.put("className", "CompositeService");
+		map.put("methodName", "setParamValuesWithRelated");
+		map.put("params", "[" + parameterPanelId +","+StartDay+ ",\"2019-05-01\",\"2019-05-01\"]");
+		result = ns.HttpPost(url_query, map, encoding);
+		System.out.println("设定参数");
+		System.out.println(result);
 
 		/*
 		 * 以下是报表输出
@@ -626,28 +538,30 @@ public class Test {
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "clearSQLResultStore");
-		map.put("params", "[" + reportID1 + "]");
+		map.put("params", "[" + clientId + "]");
 		result = ns.HttpPost(url_query, map, encoding);
-		// System.out.println(result);
+		
+		 System.out.println("clean sql");
+		 System.out.println(result);
 
 		map.clear();
-//		map.put("className", "ClientReportService");
-//		map.put("methodName", "setRowsPerPage");
-//		map.put("params", "[" + reportID1 + ",30]");
-//		result = ns.HttpPost(url_query, map, encoding);
-//		System.out.println(result);
+		 map.put("className", "ClientReportService");
+		 map.put("methodName", "setRowsPerPage");
+		 map.put("params", "[" + clientId + ",3000]");
+		 result = ns.HttpPost(url_query, map, encoding);
+		 System.out.println(result);
 
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "getTotalRowsCountWithFuture");
-		map.put("params", "[" + reportID1 + ",0]");
+		map.put("params", "[" + clientId + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
 		// System.out.println(result);
 
 		map.clear();
 		map.put("className", "ClientReportService");
 		map.put("methodName", "getReportDataWithFuture");
-		map.put("params", "[" + reportID1 + ",0]");
+		map.put("params", "[" + clientId + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
 		 System.out.println(result);
 
