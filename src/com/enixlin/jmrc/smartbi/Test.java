@@ -631,11 +631,11 @@ public class Test {
 		// System.out.println(result);
 
 		map.clear();
-		map.put("className", "ClientReportService");
-		map.put("methodName", "setRowsPerPage");
-		map.put("params", "[" + reportID1 + ",30]");
-		result = ns.HttpPost(url_query, map, encoding);
-		System.out.println(result);
+//		map.put("className", "ClientReportService");
+//		map.put("methodName", "setRowsPerPage");
+//		map.put("params", "[" + reportID1 + ",30]");
+//		result = ns.HttpPost(url_query, map, encoding);
+//		System.out.println(result);
 
 		map.clear();
 		map.put("className", "ClientReportService");
@@ -649,7 +649,7 @@ public class Test {
 		map.put("methodName", "getReportDataWithFuture");
 		map.put("params", "[" + reportID1 + ",0]");
 		result = ns.HttpPost(url_query, map, encoding);
-		// System.out.println(result);
+		 System.out.println(result);
 
 	}
 
